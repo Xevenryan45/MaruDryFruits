@@ -26,8 +26,8 @@ export default function Navbar() {
                         <ul>
                             <li><Link to='/' className='hover tablet' >Home</Link></li>
                             <li><Link to='/shop' className='hover tablet' >Shop</Link></li>
-                            <li><Link to='/about' className='hover tablet'>About Us</Link></li>
-                            <li><Link to='/contact' className='hover tablet'>Contact Us</Link></li>
+                            <li><Link to='/aboutUs' className='hover tablet'>About Us</Link></li>
+                            <li><Link to='/contactUs' className='hover tablet'>Contact Us</Link></li>
                             <li className='dropdown tablet'> 
                                 <Link to='/festival'>Gift Packs  <span className='arrowDown'><CaretDown /> </span> </Link>
                                 <ul className="dropdown-menu">
@@ -49,8 +49,8 @@ export default function Navbar() {
                                 <ul className='right'>
                                     <li className='un' ><Link to='/' >Home</Link></li>
                                     <li className='un'><Link to='/shop' >Shop</Link></li>
-                                    <li className='un'><Link to='/about' >About Us</Link></li>
-                                    <li className='un'><Link to='/contact' >Contact Us</Link></li>
+                                    <li className='un'><Link to='/aboutUs' >About Us</Link></li>
+                                    <li className='un'><Link to='/contactUs' >Contact Us</Link></li>
                                     <li className='un'><Link to='/festival' >Gift Packs </Link></li>
                                     <li className='un'> <button onClick={() => setShowMenu(false)}>Cancel</button></li>
                                 </ul>

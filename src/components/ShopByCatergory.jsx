@@ -28,7 +28,7 @@ export default function ShopByCatergory() {
     <div className='categoryContainer'>
         <div className="categoryWrapper">
             <div className="categoryHeading">
-                <h3>Shop by Category</h3>
+                <h2>Shop by Category</h2>
             </div>
 
             <div className="cardWrapper">
