@@ -9,19 +9,19 @@ export default function FestivalPacks() {
             img: 'https://res.cloudinary.com/djb0v8sck/image/upload/v1742063588/Birthday_Gift_Hamper_rmc6w5.jpg',
             
             giftTitle:"Birthday Gift Hamper", 
-            about:"Celebrate birthdays with our special selection of healthy treats in a reusable hamper.", 
+            about:"Celebrate birthdays with our special selection of healthy treats.", 
             
             contents:"Mixed Nuts, Dried Berries, Honey-roasted Pecans, Trail Mix", 
             
             amount: "$25.99"
         },
         {
-            img: 'https://res.cloudinary.com/djb0v8sck/image/upload/v1742063588/Birthday_Gift_Hamper_rmc6w5.jpg',
+            img: 'https://res.cloudinary.com/djb0v8sck/image/upload/v1742474076/corporate_bpxst5.jpg',
             
-            giftTitle:"Birthday Gift Hamper", 
-            about:"Celebrate birthdays with our special selection of healthy treats in a reusable hamper.", 
+            giftTitle:"Corporate Gift Box", 
+            about:"Premium gift box perfect for corporate gifting", 
             
-            contents:"Mixed Nuts, Dried Berries, Honey-roasted Pecans, Trail Mix", 
+            contents:"Premium Almonds, Cashews, Pistachios, Mixed Trail Mix", 
             
             amount: "$25.99"
         },

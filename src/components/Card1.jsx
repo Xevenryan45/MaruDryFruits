@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Card1({pic, driedName, text}) {
   return (
-    <div>
+
         <div className="card-container">
             <div className="card-wrapper">
                 <div className="img-card">
@@ -16,6 +16,5 @@ export default function Card1({pic, driedName, text}) {
                 </div>
             </div>
         </div>
-    </div>
   )
 }

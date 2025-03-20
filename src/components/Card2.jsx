@@ -13,13 +13,6 @@ export default function Card2({pics,fruitName,text,price}) {
         <div className="products-text">
             <h3>{fruitName}</h3>
             <p>{text}</p>
-            <div className="rating">
-                <span> <Star /> </span>
-                <span> <Star /> </span>
-                <span> <Star /> </span>
-                <span> <Star /> </span>
-                <span> <Star /> </span>
-            </div>
             <span>{price}</span>
         </div>
         

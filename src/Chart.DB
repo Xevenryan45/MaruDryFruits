@@ -1,0 +1,296 @@
+export const ChartDB1 = [
+    {
+        id: 1,
+        name: 'Premium_Almonds',
+        product_description: "Premium quality California almonds, perfect for snacking and baking."
+        image: 'https://res.cloudinary.com/djb0v8sck/image/upload/v1741692800/Premium_Almonds_y0yxmj.webp',
+        price: 12.99,
+    },
+    {
+        id: 2,
+        name: 'Organic Cashew',
+        product_description: "Organically grown cashew nuts with no preservatives or additives."
+        image: 'https://res.cloudinary.com/djb0v8sck/image/upload/v1741692704/Organic_Cashew_tz7okw.webp',
+        price: 14.99,
+    },
+    {
+        id: 3,
+        name: 'Dried Cranberries',
+        product_description: "Sweet and tangy dried cranberries, perfect for salads and baking."
+        image: 'https://res.cloudinary.com/djb0v8sck/image/upload/v1741692646/Dried_Cranberries_zz3jqq.webp',
+        price: 9.99,
+    },
+    {
+        id: 4,
+        name: 'Mixed Nuts Pack',
+        product_description: "Assorted premium nuts including almonds, cashews, walnuts"
+        image: 'https://res.cloudinary.com/djb0v8sck/image/upload/v1741692629/Mixed_Nuts_Packs_ipsz7j.jpg',
+        price: 19.99,
+    },
+    {
+        id: 5,
+        name: 'Pistachios (Roasted & Salted)',
+        product_description: "Crunchy and flavorful roasted and lightly salted pistachios."
+        image: 'https://res.cloudinary.com/djb0v8sck/image/upload/v1741611449/Pistachios_yc7fty.webp',
+        price: 16.99,
+    },
+    {
+        id: 6,
+        name: 'Organic Walnuts',
+        product_description: "Organic walnuts rich in omega-3 fatty acids and antioxidants."
+        image: 'https://res.cloudinary.com/djb0v8sck/image/upload/v1741611449/Pistachios_yc7fty.webp',
+        price: 16.99,
+    },
+    {
+        id: 7,
+        name: 'Translucent plastic film 1.5mm',
+        image: transluscentplasticfilm,
+        sign: nairasign,
+        price: 25000,
+    },
+    {
+        id: 8,
+        name: 'Translucent plastic film 2.5mm',
+        image: transluscentplasticfilm2,
+        sign: nairasign,
+        price: 35000,
+    },    
+]
+
+
+export const ChartDB2 = [
+    {
+        id: 1,
+        name: 'Letterhead papers 80 g, 250 pieces',
+        image: letterheaded80g,
+        sign: nairasign,
+        price: 20000,
+    },
+    {
+        id: 2,
+        name: 'Letterhead papers 120 g, 250 pieces',
+        image: letterheaded120g,
+        sign: nairasign,
+        price: 30000,
+    },    
+    {
+        id: 3,
+        name: 'Letterhead papers Concur paper, 100 pieces',
+        image: concurpaper,
+        sign: nairasign,
+        price: 35000,
+    },
+    {
+        id: 4,
+        name: 'Cash sales invoice 5 by 8 inches (5 booklets)',
+        image: cashsalesinvoice,
+        sign: nairasign,
+        price: 17500,
+    },
+    {
+        id: 5,
+        name: 'Cash sales receipt 6 by 4 inches (5 booklets)',
+        image: cashsalesinvoice2,
+        sign: nairasign,
+        price: 12500,
+    },
+    {
+        id: 6,
+        name: 'Company stamp self Inking 1 pieces',
+        image: companyseal,
+        sign: nairasign,
+        price: 15000,
+    },
+    {
+        id: 7,
+        name: 'Company stamp ordinary 1 pieces',
+        image: companystampordinary,
+        sign: nairasign,
+        price: 6000,
+    },
+    {
+        id: 8,
+        name: 'Company Seal 1 pieces',
+        image: companyseal,
+        sign: nairasign,
+        price: 20000,
+    },
+]
+
+export const ChartDB3 = [
+    {
+        id: 1,
+        name: 'Round 3 by 3 inches Stickers',
+        image: round,
+        sign:nairasign,
+        price: 8500,
+    },
+    {
+        id: 2,
+        name: 'Square 3 by 3 inches stickers ',
+        image: square,
+        sign: nairasign,
+        price: 6500,
+    },
+    {
+        id: 3,
+        name: 'Custom shape stickers area 9 in.sq.',
+        image: customshapedsticker,
+        sign: nairasign,
+        price: 10000,
+    },
+    {
+        id: 4,
+        name: 'Oval shaped stickers 4 by 2.5 inches ',
+        image: ovalshapedsticker,
+        sign: nairasign,
+        price: 9000,
+    },
+] 
+
+export const ChartDB4 = [
+    {
+        id: 1,
+        name: '40 leaves exercise book ',
+        image: forty_leaves,
+        sign: nairasign,
+        price: 9000,
+    },
+    {
+        id: 2,
+        name: '60 leaves exercise book',
+        image: sixty_leaves,
+        sign: nairasign,
+        price: 9000,
+    },
+    {
+        id: 3,
+        name: '2A special exercise book',
+        image: special_2A,
+        sign: nairasign,
+        price: 9000,
+    },
+    {
+        id: 4,
+        name: '2B exercise book',
+        image: exercisebooks_2B,
+        sign: nairasign,
+        price: 9000,
+    },
+    {
+        id: 5,
+        name: '2B Special exercise book',
+        image: special_2B,
+        sign: nairasign,
+        price: 9000,
+    },
+    {
+        id: 6,
+        name: '2D (writing book) exercise book',
+        image: writingbook_2D,
+        sign: nairasign,
+        price: 9000,
+    },
+    {
+        id: 7,
+        name: 'Drawing book exercise book',
+        image: drawingbook,
+        sign: nairasign,
+        price: 9000,
+    },
+    {
+        id: 8,
+        name: 'Higher Education Big note',
+        image: highereducation,
+        sign: nairasign,
+        price: 9000,
+    }
+]
+
+export const ChartDB5 = [
+    {
+        id: 1,
+        name: 'Soft cover Jotter 60 leaves 100 copies',
+        image: softcover, 
+        sign: nairasign,
+        price: 60000,
+    },
+    {
+        id: 2,
+        name: 'Hard cover jotter 80 leaves',
+        image: hardcover, 
+        sign: nairasign,
+        price: 75000,
+    },
+    {
+        id: 3,
+        name: 'Custom invitation with regular envelops 100 pieces',
+        image: custominvitationenvelopes, 
+        sign: nairasign,
+        price: 35000,
+    },
+    {
+        id: 4,
+        name: 'Custom invitation with custom envelops 100 pieces',
+        image: custominvitation, 
+        sign: nairasign,
+        price: 65000,
+    },
+    {
+        id: 5,
+        name: 'Event access card with crystal finishing and custom envelope 100 pieces',
+        image: eventaccesscards, 
+        sign: nairasign,
+        price: 30000,
+    },
+    {
+        id: 6,
+        name: 'Event access card with crystal finishing and regular envelope 100 pieces',
+        image: eventaccesscards2, 
+        sign: nairasign,
+        price: 20000,
+    },
+    {
+        id: 7,
+        name: 'Event access card with crystal finishing no envelope 100 pieces',
+        image: eventaccesscards3, 
+        sign: nairasign,
+        price: 15000,
+    },
+    {
+        id: 8,
+        name: 'Event table tags 8 by 4 inches per piece MOQ 10',
+        image: eventtabletag, 
+        sign: nairasign,
+        price: 6000,
+    },
+    {
+        id: 9,
+        name: 'Soft copy flier/ E fliers',
+        image: softcopyflier, 
+        sign: nairasign,
+        price: 6000,
+    },
+    {
+        id: 10,
+        name: 'A5 fliers 250 pieces 70 g',
+        image: A5fliers, 
+        sign: nairasign,
+        price: 20000,
+    },
+    {
+        id: 11,
+        name: 'A3 poster 70 g 500 pieces',
+        image: A3poster, 
+        sign: nairasign,
+        price: 40000,
+    },
+    {
+        id: 12,
+        name: 'Rollup banner heavy base',
+        image: rollupbarner, 
+        sign: nairasign,
+        price: 35000,
+    },
+]
+

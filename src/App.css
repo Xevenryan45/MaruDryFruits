@@ -3,6 +3,8 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+/* Navbar Begining */
 .navbar-container {
   padding: 0;
   margin: 0;
@@ -243,6 +245,8 @@ marquee {
   transition: all 0.7s;
 }
 
+/* Navbar   Ending */
+
 
 /* HERO SECTION */
 
@@ -337,43 +341,59 @@ marquee {
   margin-top: 10px;
 }
 
+/* Home-Hero  Ending */
+
+
+/* Shop by Category Beginning */
+
+
+/*  */
+
+.categoryWrapper {
+  padding-top: 60px;
+}
+
+/* Flex container for the cards */
+.cardWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
 .card-container {
-  width: 350px;
-  height: 300px;
-  /* border: 1px solid red; */
-  border-radius: 10px;
-  border: 1px solid #ccc;
-  /* box-shadow: rgba(0, 0, 2px, 2px) ; */
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .card-container:hover {
   transform: scale(1.05);
-  transition: 0.3s;
-  box-shadow: rgba(25, 25, 75, 0.2) ;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.categoryHeading  {
+.categoryHeading {
   font-size: 20px;
   font-weight: bold;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .img-card {
-  width: 80%;
-  height: 200px;
-  border-radius: 6px;
-  /* width: 200px; */
+  width: 100%;
   margin: auto;
-  border: 1px solid #ccc;
   margin-top: 20px;
+  overflow: hidden;
 }
 
 .img-card img {
   width: 100%;
-  height: 100%;
-  border-radius: 8px;
+  height: 200px; /* Default image height */
   object-fit: cover;
-  box-shadow: rgba(0,0,0,0.2);
+  display: block;
 }
 
 .text-card {
@@ -386,20 +406,55 @@ marquee {
   font-size: 22px;
 }
 
+@media screen and (min-width: 1024px) {
+  .cardWrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+  }
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .card-container {
+    max-width: 90%;
+  }
+  .img-card img {
+    height: 180px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card-container {
+    max-width: 100%;
+  }
+  .img-card img {
+    height: 150px;
+  }
+  .text-card h3 {
+    font-size: 18px;
+  }
+}
+
+/* Shop catergory ending */
+/*  */
+
 .cardWrapper {
   display: flex;
   width: 80%;
   margin: auto;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
 }
 
-
+/* Products BBeginning */
 
 div.card-container2 {
-  width: 350px;
+  max-width: 305px;
   margin: 8px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   border-radius: 8px;
-  /* box-shadow: rgba(0,0,0,0.2); */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 div.card-container2 img{
@@ -409,6 +464,16 @@ div.card-container2 img{
   /* border-radius: 8px; */
 }
 
+.productsContainer {
+  background-color: #F9FAFB;
+  margin-top: 40px;
+}
+
+.productsWrapper {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .products-text {
   text-align: center;
   margin-bottom: 20px;
@@ -416,6 +481,7 @@ div.card-container2 img{
 
 .productsHeading {
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .productsHeading h3 {
@@ -443,7 +509,7 @@ div.card-container2 img{
 .products-btn {
   display: flex;
   flex-direction: column;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   width: 60%;
   margin: auto;
 }
@@ -456,8 +522,10 @@ div.card-container2 img{
   margin-bottom: 20px;
 }
 
+/* products ending */
+
 .festive-Container {
-  background-color: #F9CD99;
+  background-color: #FEFBE8;
 }
 
 .festiveHeading {
@@ -468,11 +536,12 @@ div.card-container2 img{
 }
 
 .giftCard-Container {
-  width: 350px;
+  max-width: 301px;
   margin: 8px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   border-radius: 8px;
   background-color: #FFFFFF;
+  box-shadow: rgba(0, 0, 2px, 2px) ;
 }
 
 .giftCard-Container img {
@@ -520,100 +589,178 @@ div.card-container2 img{
   text-align: center;
 }
 
+.chooseWrapper {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+
+/* Container for the reason cards */
+.reasons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center cards on smaller screens */
+  gap: 20px;
+  width: 90%;
+  margin: 30px auto 0 auto;
+}
+
+/* Each reason card: four per row on large screens */
+.reasonCard {
+  flex: 1 1 calc(25% - 20px); /* Four cards per row (adjusting for gap) */
+  max-width: 300px;
+  border: 1px solid blue;
+  text-align: center;
+  background-color: #fff;
+}
+
+/* Card content */
+.reasonContent {
+  padding: 30px;
+  width: 100%;
+}
+
+/* Logo styling remains the same */
 .reasonLogo {
+  display: inline-flex;
   border-radius: 50%;
   background-color: #FDF3C7;
   padding: 15px;
   align-items: center;
   justify-content: center;
   color: #eb9c3b;
-  /* margin-bottom: 300px; */
-  /* display: flex; */
-  /* margin: 10px; */
 }
 
-.reasons {
-  display: flex;
-  width: 80%;
-  margin: auto;
-  justify-content: space-between;
-}
-.reasonCard {
-  display: flex;
-  border: 1px solid blue;
-  width: 350px;
-  text-align: center;
-  /* align-items: center; */
-  /* margin: auto; */
-  
-}
-.reasonContent {
-  height: 150px;
-  width: 100%;
-  padding: 30px;
-  /* line-height: 40px; */
-  /* gap: 30px; */
-  /* display: flex; */
-  /* border: 1px solid red; */
-}
-
-
-
+/* Heading styling */
 .reasonContent h2 {
   margin-top: 10px;
   line-height: 2;
-  border: 1px solid red;
 }
 
+/* Media queries for responsiveness */
+
+/* Tablets: two cards per row */
+@media screen and (max-width: 768px) {
+  .reasonCard {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+/* Mobile: one card per row */
+@media screen and (max-width: 480px) {
+  .reasonCard {
+    flex: 1 1 100%;
+  }
+}
+
+
+/* REVIEW SECTION BEGINNING */
+
+/* Container for the review cards */
 .reviewCardMapper {
   display: flex;
-  width: 80%;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* Centers cards when they wrap */
+  width: 90%;
   margin: auto;
-  justify-content: space-between;
 }
 
+/* Wrapper for overall review section spacing */
+.reviewWrapper {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/* Header styling */
 .reviewHeader {
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .reviewHeader h2 {
   font-size: 30px;
 }
 
+/* Quote icon styling */
 .quoteMsg {
   font-size: 50px;
   color: #eb9c3b;
 }
 
+/* Message text styling */
 .msg p {
   text-align: center;
 }
 
+/* Review card styling */
 .reviewCard {
-  width: 400px;
-  border: 1px solid pink;
+  flex: 1 1 400px;   /* Flex basis to allow the card to grow/shrink */
+  max-width: 400px;  /* Maximum width for large screens */
   padding: 20px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: #fff;
 }
 
+/* Customer image container */
 .customerImg {
   width: 50px;
 }
 
+/* Customer info styling */
 .customer {
   display: flex;
   gap: 20px;
   align-items: center;
   margin-top: 30px;
+  flex-wrap: wrap; /* Wrap if there isn’t enough horizontal space */
 }
 
 .customerImg img {
   width: 100%;
   border-radius: 50%;
-  /* height: 100%; */
+}
+
+/* Media queries for responsiveness */
+
+/* For tablets and medium screens */
+@media screen and (max-width: 768px) {
+  .quoteMsg {
+    font-size: 40px;
+  }
+  .reviewCard {
+    flex: 1 1 300px;
+    max-width: 300px;
+  }
+}
+
+/* For mobile devices */
+@media screen and (max-width: 480px) {
+  .reviewCard {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  .customer {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  .customerImg {
+    width: 70px;
+  }
+  .quoteMsg {
+    font-size: 35px;
+  }
+  .reviewHeader h2 {
+    font-size: 24px;
+  }
 }
 
 
-/* index.css */
+/* REVIEW ENDING */
+
+
 
 /* NewsLetter */
 
@@ -699,8 +846,8 @@ div.card-container2 img{
 
 /* Footer Base */
 footer.footer {
-  background-color: #1F2937; /* Equivalent to Tailwind's gray-900 */
-  color: #D1D5DB;            /* Equivalent to Tailwind's gray-300 */
+  background-color: #1F2937; 
+  color: #D1D5DB;           
   font-family: sans-serif;
 }
 

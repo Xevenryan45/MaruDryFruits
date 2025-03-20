@@ -11,15 +11,15 @@ export default function CustomerReviews() {
         },
         {
             customerMsg:"These are the best dry fruits I've ever tasted! The quality is exceptional and the delivery was super fast. Highly recommended!", 
-            img:"https://res.cloudinary.com/djb0v8sck/image/upload/v1742161467/Allison_pcqms5.jpg",
-            customerName:"Allison Hale", 
-            occupation:"Nutrionist",
+            img:"https://res.cloudinary.com/djb0v8sck/image/upload/v1742468156/Sarah_p5dy56.jpg",
+            customerName:"Sarah Carley", 
+            occupation:"Dentist",
         },
         {
             customerMsg:"These are the best dry fruits I've ever tasted! The quality is exceptional and the delivery was super fast. Highly recommended!", 
-            img:"https://res.cloudinary.com/djb0v8sck/image/upload/v1742161467/Allison_pcqms5.jpg",
-            customerName:"Allison Hale", 
-            occupation:"Nutrionist",
+            img:"https://res.cloudinary.com/djb0v8sck/image/upload/v1742472545/Ahrab_sam_kud78l.jpg",
+            customerName:"Ahrab Sam", 
+            occupation:"Bodybuilder",
         }
     ]
   return (
