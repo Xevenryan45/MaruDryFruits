@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import {  InfoCircleFill, Cart2 } from "react-bootstrap-icons";
+import CartContext from '../hooks/cartContext';
 
 
 const products = [
@@ -8,7 +9,7 @@ const products = [
     name: "Premium Almonds",
     price: 12.99,
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1543158266-0066955047b1?q=80&w=300&h=300&fit=crop",
+    image: "https://res.cloudinary.com/djb0v8sck/image/upload/v1741692800/Premium_Almonds_y0yxmj.webp",
     category: "Nuts",
     origin: "California",
     description: "Premium quality California almonds, perfect for snacking and baking.",
@@ -28,7 +29,7 @@ const products = [
     name: "Organic Cashews",
     price: 14.99,
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1549381511-173bb89ab319?q=80&w=300&h=300&fit=crop",
+    image: "https://res.cloudinary.com/djb0v8sck/image/upload/v1741692704/Organic_Cashew_tz7okw.webp",
     category: "Nuts",
     origin: "Vietnam",
     description: "Organically grown cashew nuts with no preservatives or additives.",
@@ -48,7 +49,7 @@ const products = [
     name: "Dried Cranberries",
     price: 9.99,
     rating: 4.5,
-    image: "https://images.unsplash.com/photo-1574043498060-55819162c405?q=80&w=300&h=300&fit=crop",
+    image: "https://res.cloudinary.com/djb0v8sck/image/upload/v1741692646/Dried_Cranberries_zz3jqq.webp",
     category: "Dried Fruits",
     origin: "USA",
     description: "Sweet and tangy dried cranberries, perfect for salads and baking.",
@@ -69,7 +70,7 @@ const products = [
     name: "Pistachios (Roasted & Salted)",
     price: 16.99,
     rating: 4.6,
-    image: "https://images.unsplash.com/photo-1583514116710-7f524a4390f4?q=80&w=300&h=300&fit=crop",
+    image: "https://res.cloudinary.com/djb0v8sck/image/upload/v1741611449/Pistachios_yc7fty.webp",
     category: "Nuts",
     origin: "Turkey",
     description: "Crunchy and flavorful roasted and lightly salted pistachios.",
@@ -90,7 +91,7 @@ const products = [
     name: "Organic Walnuts",
     price: 13.99,
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1596362714598-4b15811b0e26?q=80&w=300&h=300&fit=crop",
+    image: "https://res.cloudinary.com/djb0v8sck/image/upload/v1742476869/walnut_dewsuz.jpg",
     category: "Nuts",
     origin: "California",
     description: "Organic walnuts rich in omega-3 fatty acids and antioxidants.",
@@ -111,7 +112,7 @@ const products = [
     name: "Medjool Dates",
     price: 11.99,
     rating: 4.9,
-    image: "https://images.unsplash.com/photo-1601028753272-8acc0f1a3bfe?q=80&w=300&h=300&fit=crop",
+    image: "https://res.cloudinary.com/djb0v8sck/image/upload/v1742477094/Datees_sgiog4.jpg",
     category: "Dried Fruits",
     origin: "Morocco",
     description: "Large, sweet and soft Medjool dates - nature's caramel.",
@@ -132,7 +133,7 @@ const products = [
     name: "Golden Raisins",
     price: 8.99,
     rating: 4.5,
-    image: "https://images.unsplash.com/photo-1624544104372-c6d107bf0b20?q=80&w=300&h=300&fit=crop",
+    image: "https://res.cloudinary.com/djb0v8sck/image/upload/v1741615536/raisins_jzkcpr.webp",
     category: "Dried Fruits",
     origin: "Turkey",
     description: "Sweet, plump golden raisins, perfect for baking, cooking, or snacking.",
@@ -153,7 +154,7 @@ const products = [
     name: "Dried Apricots",
     price: 10.99,
     rating: 4.6,
-    image: "https://images.unsplash.com/photo-1611411756847-2cbbf70e7e14?q=80&w=300&h=300&fit=crop",
+    image: "https://res.cloudinary.com/djb0v8sck/image/upload/v1742477269/Dried_Apricots_hrdpi1.jpg",
     category: "Dried Fruits",
     origin: "Turkey",
     description: "Naturally sweet dried apricots with no added sugar or preservatives.",
@@ -174,7 +175,7 @@ const products = [
     name: "Brazil Nuts",
     price: 15.99,
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1546420497-c3ff6698de27?q=80&w=300&h=300&fit=crop",
+    image: "https://res.cloudinary.com/djb0v8sck/image/upload/v1742477345/Brazil_Nuts_h6jbmb.jpg",
     category: "Nuts",
     origin: "Brazil",
     description: "Large, creamy Brazil nuts known for their high selenium content.",
@@ -195,7 +196,7 @@ const products = [
     name: "Organic Dried Figs",
     price: 12.99,
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1608255880970-0b4c45836fbb?q=80&w=300&h=300&fit=crop",
+    image: "https://res.cloudinary.com/djb0v8sck/image/upload/v1742477511/Organic_Dried_Figs_p0lowu.jpg",
     category: "Dried Fruits",
     origin: "Greece",
     description: "Organic sun-dried figs, naturally sweet and rich in fiber.",
@@ -216,7 +217,7 @@ const products = [
     name: "Macadamia Nuts",
     price: 18.99,
     rating: 4.9,
-    image: "https://images.unsplash.com/photo-1551316679-9c6ae9dec224?q=80&w=300&h=300&fit=crop",
+    image: "https://res.cloudinary.com/djb0v8sck/image/upload/v1742477694/Macadamia_Nuts_zshaip.jpg",
     category: "Nuts",
     origin: "Australia",
     description: "Buttery, creamy macadamia nuts, lightly roasted to enhance flavor.",
@@ -237,7 +238,7 @@ const products = [
     name: "Dried Mango Slices",
     price: 11.99,
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1591981211889-15b10b953554?q=80&w=300&h=300&fit=crop",
+    image: "https://res.cloudinary.com/djb0v8sck/image/upload/v1742477797/Dried_Mango_Slices_znj6rr.jpg",
     category: "Dried Fruits",
     origin: "Philippines",
     description: "Sweet and tangy dried mango slices, perfect for a tropical snack.",
@@ -257,6 +258,9 @@ const products = [
 
 const Shop = () => {
   const [selectedProduct, setSelectedProduct] = useState(null);
+  const {handleAddToCart} = useContext(CartContext);
+
+
 
   return (
     <div className="shop-page">
@@ -285,12 +289,12 @@ const Shop = () => {
                     <p className="product-description">{product.description}</p>
                     <p className="product-price">${product.price.toFixed(2)}</p>
                     <div className="product-actions">
-                      <button className="btn-cart">
-                        <Cart2 className="icon" />
+                      <button className="btn-cart" onClick={() => {handleAddToCart(product)}}>
+                        <Cart2 className="icon1" />
                         Add to Cart
                       </button>
                       <button className="btn-info" onClick={() => setSelectedProduct(product)}>
-                        <InfoCircleFill className="icon" />
+                        <InfoCircleFill className="icon2" />
                         Nutrition Info
                       </button>
                     </div>
@@ -307,12 +311,12 @@ const Shop = () => {
             <div className="modal-content">
               <span className="close-btn" onClick={() => setSelectedProduct(null)}>&times;</span>
               <h2>{selectedProduct.name} - Nutrition Facts</h2>
-              <p><strong>Calories:</strong> {selectedProduct.nutrition.calories}</p>
-              <p><strong>Protein:</strong> {selectedProduct.nutrition.protein}</p>
-              <p><strong>Fats:</strong> {selectedProduct.nutrition.fats}</p>
-              <p><strong>Carbs:</strong> {selectedProduct.nutrition.carbs}</p>
-              <p><strong>Fiber:</strong> {selectedProduct.nutrition.fiber}</p>
-              <p><strong>Health Benefits:</strong> {selectedProduct.nutrition.benefits}</p>
+              <p className="nutrition-item"><strong>Calories:</strong> {selectedProduct.nutrition.calories}</p>
+              <p className="nutrition-item"><strong>Protein:</strong> {selectedProduct.nutrition.protein}</p>
+              <p className="nutrition-item"><strong>Fats:</strong> {selectedProduct.nutrition.fats}</p>
+              <p className="nutrition-item"><strong>Carbs:</strong> {selectedProduct.nutrition.carbs}</p>
+              <p className="nutrition-item"><strong>Fiber:</strong> {selectedProduct.nutrition.fiber}</p>
+              <p className="nutrition-benefits"><strong>Health Benefits:</strong> {selectedProduct.nutrition.benefits}</p>
             </div>
           </div>
         )}

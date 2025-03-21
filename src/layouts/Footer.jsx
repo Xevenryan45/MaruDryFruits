@@ -33,7 +33,7 @@ const Footer = () => {
             <h3 className="footer-title">Quick Links</h3>
             <ul className="footer-list">
               <li>
-                <Link to="/about" className="footer-link">About Us</Link>
+                <Link to="/aboutUs" className="footer-link">About Us</Link>
               </li>
               <li>
                 <a href="#" className="footer-link">Products</a>
@@ -48,7 +48,7 @@ const Footer = () => {
                 <Link to="/disclaimer" className="footer-link">Disclaimer</Link>
               </li>
               <li>
-                <Link to="/sitemap" className="footer-link">Sitemap</Link>
+                <Link to="/contactUs" className="footer-link">Sitemap</Link>
               </li>
             </ul>
           </div>
@@ -61,7 +61,7 @@ const Footer = () => {
                 <a href="#" className="footer-link">FAQs</a>
               </li>
               <li>
-                <a href="#" className="footer-link">Shipping Policy</a>
+                <Link href="/disclaimer" className="footer-link">Shipping Policy</Link>
               </li>
               <li>
                 <a href="#" className="footer-link">Return Policy</a>
@@ -70,7 +70,7 @@ const Footer = () => {
                 <a href="#" className="footer-link">Track Order</a>
               </li>
               <li>
-                <Link to="/contact" className="footer-link">Contact Us</Link>
+                <Link to="/contactUs" className="footer-link">Contact Us</Link>
               </li>
             </ul>
           </div>
@@ -81,7 +81,7 @@ const Footer = () => {
             <ul className="footer-contact-list">
               <li className="footer-contact-item">
                 <PinMap size={20} className="footer-contact-icon" />
-                <span>123 Orchard Street, Nutville, CA 94123</span>
+                <span>22, Yomi Ajetunmobi Avenue, Thera Peace Zone Estate, Alfa Bus Stop,Sangotedo, Lekki - Epe Expy, Eti-Osa, Lagos 101243, Lagos</span>
               </li>
               <li className="footer-contact-item">
                 <Phone size={20} className="footer-contact-icon" />

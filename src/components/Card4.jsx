@@ -16,7 +16,7 @@ export default function Card4({customerMsg, img, customerName, occupation}) {
 
              <div className="customerName">
                 <p>{customerName}</p>
-                <p>{occupation}</p>
+                <p className='hobby'>{occupation}</p>
              </div>
         </div>
     </div>

@@ -9,9 +9,9 @@ export default function FestivalPacks() {
             img: 'https://res.cloudinary.com/djb0v8sck/image/upload/v1742063588/Birthday_Gift_Hamper_rmc6w5.jpg',
             
             giftTitle:"Birthday Gift Hamper", 
-            about:"Celebrate birthdays with our special selection of healthy treats.", 
+            about:"Celebrate birthdays with our special selection.", 
             
-            contents:"Mixed Nuts, Dried Berries, Honey-roasted Pecans, Trail Mix", 
+            contents:"Mixed Nuts, Dried Berries, Honey-roasted Pecans", 
             
             amount: "$25.99"
         },
@@ -23,27 +23,27 @@ export default function FestivalPacks() {
             
             contents:"Premium Almonds, Cashews, Pistachios, Mixed Trail Mix", 
             
-            amount: "$25.99"
+            amount: "$25.59"
         },
         {
-            img: 'https://res.cloudinary.com/djb0v8sck/image/upload/v1742063588/Birthday_Gift_Hamper_rmc6w5.jpg',
+            img: 'https://res.cloudinary.com/djb0v8sck/image/upload/v1742475112/easter_c4b9bt.jpg',
             
-            giftTitle:"Birthday Gift Hamper", 
-            about:"Celebrate birthdays with our special selection of healthy treats in a reusable hamper.", 
+            giftTitle:"Easter Gift Hamper", 
+            about:"A premium selection of dry fruits and nuts in a decorative box", 
             
-            contents:"Mixed Nuts, Dried Berries, Honey-roasted Pecans, Trail Mix", 
+            contents:"Mixed Nuts, Mixed Nuts, Dried Berries ", 
             
-            amount: "$25.99"
+            amount: "$15.99"
         },
         {
-            img: 'https://res.cloudinary.com/djb0v8sck/image/upload/v1742063588/Birthday_Gift_Hamper_rmc6w5.jpg',
+            img: 'https://res.cloudinary.com/djb0v8sck/image/upload/v1742475280/merrykrisman_staeji.jpg',
             
-            giftTitle:"Birthday Gift Hamper", 
-            about:"Celebrate birthdays with our special selection of healthy treats in a reusable hamper.", 
+            giftTitle:"Christmas Nut Collection", 
+            about:"Festive mix of premium nuts and dried fruits in a beautiful Christmas-themed tin.", 
             
-            contents:"Mixed Nuts, Dried Berries, Honey-roasted Pecans, Trail Mix", 
+            contents:"Mixed Nuts, Dried Berries", 
             
-            amount: "$25.99"
+            amount: "$20.99"
         }
     ]
 

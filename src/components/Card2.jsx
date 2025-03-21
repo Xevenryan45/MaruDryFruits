@@ -17,8 +17,8 @@ export default function Card2({pics,fruitName,text,price}) {
         </div>
         
         <div className="products-btn">
-            <button> <ExclamationCircle className='hero-cart'/> Nutrition Info</button>
-            <button> <Cart2 className='hero-cart' /> Add to Cart</button>
+            <button className='first-btn'> <ExclamationCircle className='hero-cart'/> Nutrition Info</button>
+            <button className='second-btn'> <Cart2 className='hero-cart' /> Add to Cart</button>
         </div>
     </div>
   )
